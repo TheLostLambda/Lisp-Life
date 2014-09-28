@@ -123,7 +123,7 @@
   (setf (gethash (cons 37 5) *cells*) 1))
   
 (defun copy-hash-table (table)
-   (let ((new-table (make-hash-table :size (hash-table-size table) :test 'equal)))
+   (let ((new-table (make-hash-table :size (hash-table-size table) :test (hash-table-test table))))
       (maphash #'(lambda(key value)
                     (setf (gethash key new-table) value))
            table)
