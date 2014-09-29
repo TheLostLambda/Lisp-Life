@@ -10,6 +10,9 @@
 ;;TODO:
 ;;Add presets such as "gosper glider gun" A.K.A. "init-ggg"
 ;;Find a way to center the patterns...
+;;Find way to represent patterns in a text file:
+;;Outline - use 'defstruct' to create a container for the info, an empty line is the end of a map, and a line starting with ; is a title of the map.
+;;Optimise to skip over dead zones
 ;;Add patterns for highlife
 ;;Better integrate highlife
 ;;Clean up this mess
